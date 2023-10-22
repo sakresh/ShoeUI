@@ -1,0 +1,12 @@
+export 'package:flutter/material.dart';
+export 'package:google_fonts/google_fonts.dart';
+export 'package:get/get.dart';
+export 'package:font_awesome_flutter/font_awesome_flutter.dart';
+export 'package:shoe/view/HomePage.dart';
+export 'package:shoe/view/collections.dart';
+export 'package:shoe/widgets/card.dart';
+export 'package:iconsax/iconsax.dart';
+export 'package:shoe/widgets/CategoryCard.dart';
+export 'package:shoe/widgets/ShopCard.dart';
+export 'package:shoe/controller/Logos.dart';
+export 'package:shoe/view/ShoePage.dart';
