@@ -161,21 +161,24 @@ class _collectionPageState extends State<collectionPage> {
                   )),
             ),
             Expanded(
-              child: GestureDetector(
-                onTap: () => {
-                  Hero(tag: 'name', child: shoePage())
-                },
-                child: GridView.builder(
-                    physics: BouncingScrollPhysics(),
-                    itemCount: _logo.photos.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2),
-                    itemBuilder: (context, index) => GestureDetector(
-                            child: shopCard(
-                          image: _logo.photos[index],
-                          name: _logo.names[index],
-                        ))),
-              ),
+              child: GridView.builder(
+                  physics: BouncingScrollPhysics(),
+                  itemCount: _logo.photos.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  itemBuilder: (context, index) => GestureDetector(
+                          child: GestureDetector(
+                        onTap: () {
+                          Get.to(shoePage(index: index,));
+                        },
+                        child: Hero(
+                          tag: index,
+                          child: shopCard(
+                            image: _logo.photos[index],
+                            name: _logo.names[index],
+                          ),
+                        ),
+                      ))),
             )
           ],
         ),

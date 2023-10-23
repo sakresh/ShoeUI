@@ -24,11 +24,24 @@ class shopCard extends StatelessWidget {
           children: [
             Image.asset(image, height: 130,),
             Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: Text(name,style: GoogleFonts.lato(
-                fontSize: 23,
-                fontWeight: FontWeight.bold
-              ),),
+              padding: const EdgeInsets.only(left: 19, right: 19, bottom: 10),
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10),
+                      child: Text(name,style: GoogleFonts.lato(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold
+                      ),),
+                    ),
+                    Icon(FontAwesomeIcons.heart, color: Colors.orange,)
+                  ],
+                ),
+              ),
             )
           ],
         ),

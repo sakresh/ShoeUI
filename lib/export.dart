@@ -10,3 +10,4 @@ export 'package:shoe/widgets/CategoryCard.dart';
 export 'package:shoe/widgets/ShopCard.dart';
 export 'package:shoe/controller/Logos.dart';
 export 'package:shoe/view/ShoePage.dart';
+export 'package:shoe/widgets/MySize.dart';

@@ -1,5 +1,7 @@
 import 'package:shoe/export.dart';
 
+final _logo = Get.put(Logos());
+
 class categoryCard extends StatelessWidget {
 
   final String image;
@@ -14,10 +16,10 @@ class categoryCard extends StatelessWidget {
         width: 70,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
-          color: Colors.black
+          color:Colors.black
         ),
         child: Center(
-          child: Image.asset(image, height: 25, color: Colors.white,),
+          child: Image.asset(image, height: 25, color:Colors.white,),
         ),
       ),
     );

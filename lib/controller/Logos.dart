@@ -1,6 +1,6 @@
-class Logos{
+import 'package:shoe/export.dart';
 
-  bool isActive=true;
+class Logos extends GetxController{
 
   List<String> logo=[
     'assets/nike.png',
